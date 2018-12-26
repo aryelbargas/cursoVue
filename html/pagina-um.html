@@ -1,0 +1,27 @@
+﻿<!-- This page was developed by Aryel Bargas -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page with Vue by Me <3</title>
+</head>
+<body>
+	<section>
+		<div id="header">
+			<h1>Aryel's Floriculture</h1>
+			<h3>{{ product }} are in stock!</h3>
+		</div>
+	</section>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+<script>
+	const header = new Vue({
+		el:'#header',
+		data:{
+			product: 'Flowers'
+		}
+	})
+</script>
+</html>
